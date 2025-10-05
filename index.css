@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button:active {
+    background-color: lightgrey;
+}  
+
+#container {
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#buttons {
+    width: 400px;
+    height: 480px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin: auto;
+    margin-top: 10px;
+}
+#buttons button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    font-size: 20px;
+    gap: 1px;
+    outline: none;
+    cursor: pointer;
+}
+#display {
+    width: 380px;
+    height: 100px;
+    margin: 10px;
+    font-size: 50px;
+    text-align: right;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#zero {
+    grid-column: span 2;
+}
+#equals {
+    grid-row: span 2;
+    background-color: orange;
+}
+#equals:active {
+    background-color: darkorange;
+}
+#clear {
+    background-color: red;
+    color: white;
+}
+#clear:active {
+    background-color: darkred;
+}
+#backspace {
+    background-color: lightblue;
+}
+#backspace:active {
+    background-color: deepskyblue;
+}
+#divide, #multiply, #subtract, #add {
+    background-color: lightgreen;
+}
+#divide:active, #multiply:active, #subtract:active, #add:active {
+    background-color: greenyellow;
+}  
